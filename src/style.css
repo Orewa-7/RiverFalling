@@ -1,0 +1,51 @@
+#root{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    padding: 1em;
+    border-radius: 30px;
+    background-color: #333;
+    z-index: 1;
+
+    opacity: 0.7;
+}
+
+.color{
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 2em;
+    margin: 1em 0;
+}
+
+.red{
+    background-color: red;
+}
+.purple{
+    background-color: purple;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        top: 10%;
+        right: 10%;
+    }
+    .color{
+        padding: 1em;
+    }
+    
+}
